@@ -1,5 +1,5 @@
 def main() -> float:
-    x, y, operator = input().split()
+    x, y, operator = input("ingrese dos numeros y la operacion deseada (*) (/) (+) (-) (**) (//)").split()
     x = int(x)
     y = int(y)
     output: float
@@ -16,6 +16,8 @@ def main() -> float:
             output = x // y
         case "**":
             output = x ** y
+        case "_":
+            return "operacion no valida"
     return output
             
 
