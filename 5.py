@@ -4,7 +4,7 @@ from collections import Counter
 
 def main():
     # Guarda el input como lista
-    lista = input("ingrese una lista de palabras\n").split()
+    lista = list(map(lambda x : x.lower() , (input("ingrese una lista de palabras\n").split())))
 
     # Se guardan las palabras que cumplan a un resultado en un conjunto, esto
     # para que se ignoren automaticamente palabras duplicadas y las cuente como
